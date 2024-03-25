@@ -1,28 +1,29 @@
-### LakeScum
+## LakeScum
 <img src="https://github.com/danielbeach/lakescum/blob/main/imgs/lakescum.webp" width="300">
 
 A Python pacakge to help Databricks Unity Catalog users to read and query
-Delta Lake tables with Polars, DuckDb, or PyArrow.
+Delta Lake tables with `Polars`, `DuckDb`, or `PyArrow`.
 
 Unity Catalog does not place nice out-of-the-box with many of
 these tools using built in features like `polars.read_delta()` for
 example.
 
-`lakescum` takes that difficulty away.
+`LakeScum` takes that difficulty away.
 
-#### Installation
-`lakescum` can be installed for Python with a simple `pip` command.
-`pip install lakescum` 
+### Installation
+`LakeScum` can be installed for Python with a simple `pip` command.
+`pip install LakeScum` 
 
 
-#### Usage
+### Usage
 There are currently the methods to read and query a Unity Catalog `Delta Lake` with ...
-    - Polars
-    - DuckDb
-    - PyArrow
+
+- `Polars`
+- `DuckDb`
+- `PyArrow`
 
 
-##### Polars
+### Polars
 You can query and return a `Polars` Dataframe from a Unity Catalog `Delta Lake` table with
 the following method.
 `unity_catalog_delta_to_polars()`
