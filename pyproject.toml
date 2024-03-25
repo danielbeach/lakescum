@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "lakescum"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+polars = "^0.20.16"
+deltalake = "^0.16.2"
+pyarrow = "^15.0.2"
+duckdb = "^0.10.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
