@@ -12,7 +12,8 @@ example.
 
 ### Installation
 `LakeScum` can be installed for Python with a simple `pip` command.
-`pip install LakeScum` 
+
+`pip install lakescum` 
 
 
 ### Usage
@@ -40,7 +41,9 @@ Example ...
 polars_df = unity_catalog_delta_to_polars(spark, 
     'production.default.fact_orders',
     sql_filter="year = 2024 and month = 3 and day = 10")
+
 print(polars_df.head(10))
+
 order_id | product_id | order_date | quantity
 1 | 4567 | '2024-03-10' | 5
 ```
@@ -64,7 +67,9 @@ unity_catalog_delta_register_to_duckdb(spark,
     "production.default.fact_orders",
     "test", 
     sql_filter="year = 2024 and month =3 and day = 19")
+
 results = duckdb.sql("SELECT * FROM test")
+
 print(results)
 order_id | product_id | order_date | quantity
 1 | 4567 | '2024-03-10' | 5
